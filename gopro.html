@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TPAB X GoPro - Theme Park Adventure Bros</title>
+
+<style>
+body {margin:0;font-family:Arial,sans-serif;background-color:#121212;color:#f0f0f0;}
+body.light {background-color:#f5f5f5;color:#111;}
+nav {display:flex;justify-content:center;flex-wrap:wrap;padding:.5rem 0;background-color:inherit;position:sticky;top:0;z-index:100;}
+nav a {color:inherit;text-decoration:none;margin:0 1rem;font-weight:bold;transition:color .3s;}
+nav a:hover {color:#ff4444;}
+.container {padding:2rem;max-width:1200px;margin:auto;}
+h1 {color:#ff4444;text-align:center;margin-bottom:1rem;}
+p.desc {text-align:center;max-width:800px;margin:0 auto 2rem auto;}
+.item {display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem;margin-bottom:2rem;background:#1a1a1a;padding:1rem;border-radius:10px;}
+body.light .item {background:#e0e0e0;}
+.item img {max-width:250px;width:100%;border-radius:8px;}
+.item-content {flex:1;min-width:250px;}
+.item-content h2 {color:#ff4444;margin-bottom:.5rem;}
+.item-content p {margin-bottom:1rem;}
+button.buy-btn {background-color:#ff4444;color:white;border:none;padding:10px 15px;font-size:1rem;border-radius:5px;cursor:pointer;transition:background-color .3s;}
+button.buy-btn:hover {background-color:#cc0000;}
+footer {text-align:center;padding:1rem 0;}
+footer a {color:white;text-decoration:none;transition:color 0.3s;}
+footer a:hover, footer a:active {color:#ff4444;}
+footer .copyright {color:#ff4444;font-size:.9rem;margin-top:.5rem;}
+.toggle-btn {position:fixed;bottom:80px;right:20px;width:50px;height:50px;border-radius:50%;border:none;background-color:#444;color:#fff;font-weight:bold;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,.3);transition:background-color .3s;}
+.toggle-btn:hover {background-color:#ff6666;}
+</style>
+</head>
+<body class="dark">
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="blog.html">Blog</a>
+  <a href="merlin.html">Merlin</a>
+  <a href="gopro.html">GoPro</a>
+  <a href="shop.html">Shop</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <h1>TPAB X GoPro</h1>
+  <p class="desc">When purchasing items from GoPro please use our affiliate links below! We appreciate anyone who uses our affiliate links as we receive a commission to help us make future improved content from all sales!</p>
+
+  <!-- Item 1 -->
+  <div class="item">
+    <img src="gopro11.jpg" alt="GoPro Hero 11 Black">
+    <div class="item-content">
+      <h2>GoPro Hero 11 Black</h2>
+      <p>The GoPro Hero 11 is our go to action camera. Benefits of this are its a secure, trusted way to film on rides by many parks whilst maintaining high quality footage and being durable. Pressing buy now will take you to GoPro.com and we will receive a commission on qualifying purchases.</p>
+      <a href="https://prf.hn/l/bxlMYNO/" target="_blank">
+        <button class="buy-btn">Buy Now</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="item">
+    <img src="chestmount.jpg" alt="GoPro Chest Mount">
+    <div class="item-content">
+      <h2>GoPro Chest Mount</h2>
+      <p>The GoPro chest mount is the best way to film on rides approved by many parks this is the ideal way of filming on rides using a chest mount for the majority of parks that allow on ride filming. Pressing buy now will take you to GoPro.com and we will receive a commission on qualifying purchases.</p>
+      <a href="https://prf.hn/l/1eER8bj/" target="_blank">
+        <button class="buy-btn">Buy Now</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="item">
+    <img src="mediamod.jpg" alt="GoPro Media Mod">
+    <div class="item-content">
+      <h2>GoPro Media Mod</h2>
+      <p>The GoPro Media Mod is essential for connecting any external hardware to it from things like microphones, lighting + more as well as having its own built in mic that is higher quality than the one built into the GoPro! Pressing buy now will take you to GoPro.com and we will receive a commission on qualifying purchases.</p>
+      <a href="https://prf.hn/l/jXAmQq9/" target="_blank">
+        <button class="buy-btn">Buy Now</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <a href="terms.html" class="terms-link">Terms & Conditions</a>
+  <p class="copyright">© 2025 Theme Park Adventure Bros</p>
+</footer>
+
+<button class="toggle-btn" onclick="toggleMode()">🌙</button>
+
+<script>
+// Dark/Light toggle
+function toggleMode() {
+  const toggleBtn = document.querySelector('.toggle-btn');
+  if(document.body.classList.contains('dark')) {
+    document.body.classList.remove('dark');
+    document.body.classList.add('light');
+    toggleBtn.textContent = '☀️';
+  } else {
+    document.body.classList.remove('light');
+    document.body.classList.add('dark');
+    toggleBtn.textContent = '🌙';
+  }
+}
+</script>
+
+</body>
+</html>
